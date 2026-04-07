@@ -10,6 +10,7 @@ import {
 } from '../services/task.service.js';
 
 export const createTask = expressAsyncHandler(async (req, res) => {
+	console.log('Incoming Task Data:', req.body);
 	const task = await createTaskService(req.body);
 	return res.status(201).json(ApiResponse.success(TASK_MESSAGES.CREATED, task));
 });
