@@ -12,9 +12,10 @@ const connectToDatabase = async () => {
 	if (mongoose.connection.readyState >= 1) return;
 	try {
 		await mongoose.connect(DB_URI);
+		console.log('Connected to MongoDB');
 	} catch (error) {
 		console.log('error connecting to database', error);
-		process.exit(1);
+
 	}
 };
 
