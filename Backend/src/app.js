@@ -28,3 +28,5 @@ app.listen(PORT, async () => {
 	console.log(`connected to database in ${NODE_ENV} mode`);
 	await connectToDatabase();
 });
+
+export default app;

@@ -9,6 +9,7 @@ if (!DB_URI) {
 }
 
 const connectToDatabase = async () => {
+	if (mongoose.connection.readyState >= 1) return;
 	try {
 		await mongoose.connect(DB_URI);
 	} catch (error) {
