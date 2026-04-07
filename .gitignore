@@ -1,0 +1,23 @@
+# ─── Dependencies ────────────────────────────────
+node_modules/
+
+# ─── Environment (sensitive) ─────────────────────
+.env.local
+.env.*.local
+
+# ─── Angular cache & build ───────────────────────
+.angular/
+dist/
+build/
+
+# ─── Logs ────────────────────────────────────────
+*.log
+npm-debug.log*
+logs/
+
+# ─── OS files ────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Test coverage ───────────────────────────────
+coverage/
