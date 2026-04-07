@@ -8,7 +8,7 @@ import { Task, ApiResponse, PaginatedTasks } from '../models/task.model';
   providedIn: 'root',
 })
 export class TaskService {
-  private readonly apiUrl = 'http://localhost:3000/api/v1/tasks';
+  private readonly apiUrl = 'https://axis-api-three.vercel.app/api/v1/tasks';
 
   constructor(private http: HttpClient) {}
 
